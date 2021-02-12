@@ -25,6 +25,7 @@
 ;; Code here
 
 ;; posn-util.rkt February 2021
+;; version 1.03 posn-length-sqr fixed
 ;; version 1.02 made long versions of names the standard
 
 ;; Errors:
@@ -283,8 +284,8 @@
   (posn-distance p q))
 (define (posn-sub p q)
   (posn-subtract p q))
-(define (posn-length-sqr p q)
-  (posn-length-squared p q))
+(define (posn-length-sqr p)
+  (posn-length-squared p))
 (define (posn-within? p q eps)
   (posn~=? p q eps))
 
